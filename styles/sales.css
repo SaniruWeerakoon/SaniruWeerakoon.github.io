@@ -1,0 +1,48 @@
+:root{
+    --bgcolor:rgb(49, 153, 71);
+}
+
+
+.headimg{
+    width:100%;
+}
+.tea{
+    width:80%;
+    border-radius: 10px;
+}
+.buy:hover{
+    transform: scale(1.1);
+}
+.buy{
+    margin: 5px;
+    width:75%;
+    font-size: 1.2em;
+    background-color: #a7a7a7;
+
+}
+.price{
+    font-weight: bold;
+}
+.image{
+    margin:25px;
+    padding:25px;
+    background-color:var(--bgcolor) ;
+    text-align: center;
+    border-radius: 15px;
+}
+@media only screen and (min-width: 768px){ /*desktop*/
+      .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+      }  
+      
+}    
+
+
+@media only screen and (max-width:767px){/*mobile*/
+        .container{
+            display: grid;
+            grid-template-columns: 1fr;
+        }  
+}

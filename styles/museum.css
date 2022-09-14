@@ -1,0 +1,37 @@
+img{
+    border-radius: 10px;
+    margin:5px;
+}
+.headimg{
+    margin: 0px;
+}
+
+@media only screen and (max-width:767px){/*mobile*/
+    .text{
+        position:absolute;
+        top:50%;
+        left:50%;
+        color:black;
+    }
+    .image,iframe{
+        width:100%;
+        object-fit: contain;
+    }
+}
+@media only screen and (min-width:768px){/*desktop*/
+    .box1{
+        max-width: 30%;
+        float: left;
+    }
+    .box2{
+        max-width:30%;
+        float: right;
+    }
+    .text{
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color:black;
+    }
+}
