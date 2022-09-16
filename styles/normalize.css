@@ -77,7 +77,7 @@
    */
   
   hr {
-    box-sizing: content-box; /* 1 */
+    /*box-sizing: content-box; removed due to an interference with margin*/ /* 1 */ 
     height: 0; /* 1 */
     overflow: visible; /* 2 */
   }

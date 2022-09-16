@@ -31,6 +31,12 @@
         position: absolute;
         left: 50%;
     }
+    .gmap{
+        max-width:40%;
+        height:150px;
+        float:right;
+        object-fit: contain;
+    }
     .table {
         table-layout:fixed;
         width:100%;
@@ -72,15 +78,18 @@
         width:50%;
         object-fit: contain;
     }
-    .image{
+    .image,.gmap{
         width:100%;
         border-radius: 10px;
         margin:5px;
         object-fit: contain;
     }
-    .images{
-        width:25%;
+    .gmap{
+        height: 100px;
         object-fit: contain;
+    }
+    .images{
+        display: none;
     }
     .teaimg{
         max-width:50%;

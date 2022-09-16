@@ -5,7 +5,10 @@ img{
 .headimg{
     margin: 0px;
 }
-
+.gmap{
+    width:40%;
+    border:0;
+}
 @media only screen and (max-width:767px){/*mobile*/
     .text{
         position:absolute;
