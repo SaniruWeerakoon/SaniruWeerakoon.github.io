@@ -7,59 +7,6 @@ img {
     margin: 0px;
 }
 
-.gmap {
-    width: 40%;
-    border: 0;
-}
-
-@media only screen and (max-width:767px) {
-
-    /*mobile*/
-    .text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        color: black;
-    }
-
-    .image,
-    iframe {
-        width: 100%;
-        object-fit: contain;
-    }
-}
-
-@media only screen and (min-width:768px) {
-
-    /*desktop*/
-    .box1 {
-        max-width: 30%;
-        float: left;
-    }
-
-    .box2 {
-        max-width: 30%;
-        float: right;
-    }
-
-    .text {
-        position: absolute;
-        top: 85%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: black;
-    }
-
-    img {
-        border-radius: 10px;
-        margin: 5px;
-    }
-
-    .headimg {
-        margin: 0px;
-    }
-}
-
 @media only screen and (max-width:767px) {
 
     /*mobile*/
@@ -112,15 +59,13 @@ img {
     width: fit-content;
 
 }
-
-#btn:hover {
+#btn:hover{
     border: 2px solid black;
-
-    cursor: pointer;
+    
+    cursor:pointer;
     background-color: #0b5e4c;
 }
-
-#bform {
+#bform{
     display: flex;
     align-items: center;
     justify-content: center;
