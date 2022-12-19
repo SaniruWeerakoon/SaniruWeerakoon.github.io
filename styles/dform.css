@@ -236,3 +236,6 @@ button:hover {
 #reset {
     display: none;
 }
+fieldset{
+    border: none;
+}

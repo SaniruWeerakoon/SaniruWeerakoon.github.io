@@ -81,8 +81,8 @@
       its fair share of problems.Due to the global pandemic tea imports have decreased to never before seen
       values.<br>The workforce that live by working
       in the massive tea industry also have been affected as a result of the pandemic.<br>If possible contribute to the
-      once prosperous industry to rise up to its former glory .<br>It is also possible to purchase our products through
-      tea sales page by clicking on the <a href="sales.html" target="_blank">link</a></p>
+       once prosperous industry to rise up to its former glory .<!--<br>It is also possible to purchase our products through
+      tea sales page by clicking on the <a href="sales.html" target="_blank">link</p> -->
     <!-- <div class="container">
               <div class="col">
                 <a href="" target="blank"><img src="images/donation2.webp" class="donate" alt="banner contaning donation link 1"> </a>
@@ -97,38 +97,40 @@
       </div> -->
       <div class="details">
         <div class="cDetails">
-          <label>Full Name</label>
+          <label for="fname">Full Name</label>
           <input type="text" id="fname" name="fname" required 
             placeholder="Enter your Full Name ">
         </div>
         <div class="cDetails">
-          <label>Address</label>
+          <label for="address">Address</label>
           <input type="text" id="address" name="address" required 
             placeholder="Enter your Address ">
         </div>
         <div class="cDetails">
-          <label>Card Number</label>
+          <label for="cnum">Card Number</label>
           <input type="tel" id="cnum" name="cnum" required placeholder="Enter Card Number " minlength="15"
             maxlength="16">
         </div>
 
         <div class="cDetails">
-          <label>Expiry Date </label>
+          <label for="expiry">Expiry Date </label>
           <input type="date" id="expiry" name="expiry" required>
         </div>
 
         <div class="cDetails">
-          <label>CVC / CVV </label>
+          <label for="cvc">CVC / CVV </label>
           <input type="tel" id="cvc" name="cvc" required placeholder="Enter your Number" minlength="3" maxlength="4">
         </div>
 
         <div class="cDetails">
-          <label> Name on Card</label>
+          <label for="name"> Name on Card</label>
           <input type="text" id="name" name="name" required" placeholder="Enter the Card Name">
 
         </div>
       </div>
-      <p>Select Donation Amount </p>
+      
+      <fieldset>
+        <legend>Select Donation Amount </legend>
       <div class="radgrp">
         <div class="radio">
           <input type="radio" id="1" class="radbtn" name="amt" value="100">
@@ -156,12 +158,12 @@
         </div>
       </div>
       <button type="button" id="btn">Donate</button>
-      <input type="reset" id="reset">
-
+      <input type="reset" id="reset" value="reset">
+    </fieldset>
     </form>
 
-    <div class="popup" id="popup">
-      <img src="images/tick1.webp">
+    <div class="popup" id="popup" >
+      <img src="images/tick1.webp" alt="Check Mark">
       <h2 id="pop-h2">Thank You!</h2>
       <p id="pop-p">Your Donation is much appreciated !</p>
       <button type="button" id="pop-btn">Ok</button>
@@ -226,9 +228,10 @@
         </ul>
       </div>
       <div class="column search">
-        <h3 class="h3">Search</h3>
+        <label for="search" class="h3">Search</label>
+        
         <div>
-          <input type="search" placeholder="Search here" />
+          <input type="search" id="search" placeholder="Search here" />
           <button>Search</button>
         </div>
       </div>

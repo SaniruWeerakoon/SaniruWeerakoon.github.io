@@ -2,7 +2,7 @@
     --backcolor:rgb(5, 114, 29);  /*background colour for nav and footer*/
     --navhovcolor:#2b9c3e;         /*hover link colour in nav*/
     --dropcolor:#2c7939;          /*dropdown list colour*/
-    --footcolor:#a7a7a7;            /*font colour of footer*/
+    --footcolor:#ffffff;            /*font colour of footer*/
 }
 
 
@@ -106,7 +106,9 @@ input[type=checkbox]{
     user-select: none;
 }  
 .menu a.active{
-    background-color: rgb(8, 151, 79);
+    /* background-color: rgb(8, 151, 79); */
+    background-color: var(--navhovcolor);
+    
     padding: 15px;
     border-radius: 10px;
 }
@@ -193,6 +195,7 @@ button {
     font-size: 1em;
     text-align: right;
     margin-top: 10px;
+    color:white;
 }
 
 
