@@ -6,9 +6,11 @@
         border: 2px solid black;
         border-radius: 15px;
     }
+    
     .img3,.img2{
         width:100%;
     }
+    
     .purchase{
         display: flex;
         flex-direction: row;

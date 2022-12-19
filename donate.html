@@ -18,13 +18,15 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="msapplication-config" content="images/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="styles/normalize.css">
+  <!-- <link rel="stylesheet" href="styles/normalize.css" rel="preload" as="style"> -->
+  <link rel="stylesheet" href="styles/donate.css">
+
   <link rel="stylesheet" href="styles/home.css">
 
-  <link rel="stylesheet" href="styles/donate.css">
-  <link rel="stylesheet" href="styles/dform.css">
+  <link rel="stylesheet" href="styles/dform.css" rel="preload" as="style">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    rel="preload" as="style">
 </head>
 
 <body>
@@ -52,14 +54,17 @@
       </ul>
     </nav>
     <div class="mainimg">
-      <img src="images/teas4.webp" class="headimg" alt="tea plantation">
+      <img srcset="images/teas4 (1).webp 500w ,images/teas4.webp 700w" sizes="(max-width: 600px) 480px,
+         1000px" src=" images/teas4 (1).webp" class="headimg" alt="tea plantation">
     </div>
   </header>
   <section>
     <h3>Ceylon Tea Shops</h3>
     <div class="purchase">
-      <div class="item box1"> <a href="https://www.dilmahtea.com/" target="_blank"><img src="images/dilmah.webp"
-            class="img2" alt="Dilmah Tea shop"></a> </div>
+      <div class="item box1"> <a href="https://www.dilmahtea.com/" target="_blank">
+          <img src="images/dilmah.webp" class="img2"
+            alt="Dilmah Tea shop"></a>
+      </div>
       <div class="item box1"> <a href="https://www.zestaceylontea.com/" target="_blank"> <img src="images/sales3.webp"
             class="img2" alt="Zesta Tea Shop"></a></div>
       <div class="item box1"> <a href="https://www.lipton.com/" target="_blank"> <img src="images/lipton.webp"
@@ -68,11 +73,17 @@
     <h3>Other Merchandise</h3>
     <div class="purchase">
       <div class="item box3"> <a href="https://lassana.com/sri-lankan-elephant-by-dankotuwa-green-gold/p/63600"
-          target="blank"><img src="images/elephant.webp" class="img3" alt="miniature ceramic elephant"> </a></div>
+          target="blank">
+          <img  src="images/elephant.webp" class="img3" alt="miniature ceramic elephant">
+        </a></div>
       <div class="item box3"><a href="https://lassana.com/dankotuwa-hand-painting-dancer-tea-set-17-pcs/p/5998"
-          target="blank"><img src="images/teapot.webp" class="img3" alt="teapot with hand-drawn dancer"> </a></div>
+          target="blank">
+          <img  src="images/teapot.webp" class="img3" alt="teapot with hand-drawn dancer">
+        </a></div>
       <div class="item box3"><a href="https://www.paradiseroad.lk/tea-service/227-tusker-tea-cup-saucer.html"
-          target="blank"><img src="images/teacup.webp" class="img3" alt="teacup with hand-drawn elephant"> </a></div>
+          target="blank">
+          <img  src="images/teacup.webp" class="img3" alt="teacup with hand-drawn elephant">
+        </a></div>
     </div>
   </section>
   <section>
@@ -81,9 +92,9 @@
       its fair share of problems.Due to the global pandemic tea imports have decreased to never before seen
       values.<br>The workforce that live by working
       in the massive tea industry also have been affected as a result of the pandemic.<br>If possible contribute to the
-       once prosperous industry to rise up to its former glory .<!--<br>It is also possible to purchase our products through
+      once prosperous industry to rise up to its former glory .<!--<br>It is also possible to purchase our products through
       tea sales page by clicking on the <a href="sales.html" target="_blank">link</p> -->
-    <!-- <div class="container">
+      <!-- <div class="container">
               <div class="col">
                 <a href="" target="blank"><img src="images/donation2.webp" class="donate" alt="banner contaning donation link 1"> </a>
               </div>
@@ -98,13 +109,11 @@
       <div class="details">
         <div class="cDetails">
           <label for="fname">Full Name</label>
-          <input type="text" id="fname" name="fname" required 
-            placeholder="Enter your Full Name ">
+          <input type="text" id="fname" name="fname" required placeholder="Enter your Full Name ">
         </div>
         <div class="cDetails">
           <label for="address">Address</label>
-          <input type="text" id="address" name="address" required 
-            placeholder="Enter your Address ">
+          <input type="text" id="address" name="address" required placeholder="Enter your Address ">
         </div>
         <div class="cDetails">
           <label for="cnum">Card Number</label>
@@ -128,41 +137,41 @@
 
         </div>
       </div>
-      
+
       <fieldset>
         <legend>Select Donation Amount </legend>
-      <div class="radgrp">
-        <div class="radio">
-          <input type="radio" id="1" class="radbtn" name="amt" value="100">
-          <label for="1">100 <br> LKR</label>
+        <div class="radgrp">
+          <div class="radio">
+            <input type="radio" id="1" class="radbtn" name="amt" value="100">
+            <label for="1">100 <br> LKR</label>
+          </div>
+          <div class="radio">
+            <input type="radio" id="2" class="radbtn" name="amt" value="500">
+            <label for="2">500 <br> LKR</label>
+          </div>
+          <div class="radio">
+            <input type="radio" id="3" class="radbtn" name="amt" value="1000">
+            <label for="3">1000 <br>LKR</label>
+          </div>
+          <div class="radio">
+            <input type="radio" id="4" class="radbtn" name="amt" value="2000">
+            <label for="4">2000 <br> LKR</label>
+          </div>
+          <div class="radio">
+            <input type="radio" id="5" class="radbtn" name="amt" value="5000">
+            <label for="5">5000 <br>LKR</label>
+          </div>
+          <div class="radio">
+            <input type="radio" id="6" class="radbtn" name="amt" value="10000">
+            <label for="6">10000<br> LKR</label>
+          </div>
         </div>
-        <div class="radio">
-          <input type="radio" id="2" class="radbtn" name="amt" value="500">
-          <label for="2">500 <br> LKR</label>
-        </div>
-        <div class="radio">
-          <input type="radio" id="3" class="radbtn" name="amt" value="1000">
-          <label for="3">1000 <br>LKR</label>
-        </div>
-        <div class="radio">
-          <input type="radio" id="4" class="radbtn" name="amt" value="2000">
-          <label for="4">2000 <br> LKR</label>
-        </div>
-        <div class="radio">
-          <input type="radio" id="5" class="radbtn" name="amt" value="5000">
-          <label for="5">5000 <br>LKR</label>
-        </div>
-        <div class="radio">
-          <input type="radio" id="6" class="radbtn" name="amt" value="10000">
-          <label for="6">10000<br> LKR</label>
-        </div>
-      </div>
-      <button type="button" id="btn">Donate</button>
-      <input type="reset" id="reset" value="reset">
-    </fieldset>
+        <button type="button" id="btn">Donate</button>
+        <input type="reset" id="reset" value="reset">
+      </fieldset>
     </form>
 
-    <div class="popup" id="popup" >
+    <div class="popup" id="popup">
       <img src="images/tick1.webp" alt="Check Mark">
       <h2 id="pop-h2">Thank You!</h2>
       <p id="pop-p">Your Donation is much appreciated !</p>
@@ -229,7 +238,7 @@
       </div>
       <div class="column search">
         <label for="search" class="h3">Search</label>
-        
+
         <div>
           <input type="search" id="search" placeholder="Search here" />
           <button>Search</button>
@@ -254,7 +263,7 @@
 
         -->
   </footer>
-  <script src="scripts/dform.js"></script>
+  <script async src="scripts/dform.js"></script>
 </body>
 
 </html>
